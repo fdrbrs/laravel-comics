@@ -29,7 +29,7 @@ Route::get('comics/{id}', function($id){
     $comics = config('comics.data');
     $comic = $comics[$id];
     return view('comics.show', compact('comic'));
-});
+})->name(comic);
 
 
 Route::get('/movies', function () {

@@ -11,7 +11,9 @@
             <div class="title">
                 {{ $comic['title'] }}
             </div>
+            
             <img src="{{$comic['thumb']}}" alt="">
+            s
         </div>
     @endforeach
     </div>
