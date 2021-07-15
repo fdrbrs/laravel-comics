@@ -27,7 +27,8 @@ Route::get('/comics', function () {
 Route::get('comics/{id}', function($id){
 
     $comics = config('comics.data');
-    return view('comics.show');
+    $comic = $comics[$id];
+    return view('comics.show', compact('comic'));
 });
 
 
